@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importadora Yón</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos adicionales específicos para esta página si los necesitas */
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Manejar el clic en los enlaces del menú
+      $('.wrap-menu-footer-section ul li a').on('click', function(event) {
+        // Prevenir el comportamiento predeterminado del enlace
+        event.preventDefault();
+
+        // Obtener el atributo href del enlace clicado
+        var target = $(this).attr('href');
+
+        // Animación de desplazamiento suave
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800); // Velocidad de la animación en milisegundos (opcional)
+      });
+    });
+  </script>
+</head>
+<body>
+  
+  <header class="header-landing">
+    <div class="wrap-logo">
+      <img src="img/logo.jpg" alt="" class="logo-header">
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="wrap-hero-section">
+      <h1>Importadora Yón</h1>
+      <p>Bienvenido a nuestra página donde podrás aprender más de nosotros</p>
+      <div class="wrap-cta">
+        <a href="#login-section" class="cta-a">Login</a>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section logos-section">
+    <div class="wrap-logos-section">
+      <img src="img/img11.png" alt="" class="logo-brand">
+      <img src="img/img12.jpg" alt="" class="logo-brand">
+      <img src="img/img13.png" alt="" class="logo-brand">
+      <img src="img/img18.jpg" alt="" class="logo-brand">
+      <img src="img/img17.jpg" alt="" class="logo-brand">
+    </div>
+  </section>
+
+  <section id="servicios-section" class="section servicios-section">
+    <div class="wrap-title-section">
+      <h2>Vehículos disponibles</h2>
+    </div>
+
+    <div class="wrap-servicios-section">
+      <a href="#" class="item-servicios-section">
+        <img src="img/img1.jpeg" alt="">
+        <p>Kia Sportage 2015 4x2</p>
+      </a>
+   
+      <a href="#" class="item-servicios-section">
+        <img src="img/img3.jpeg" alt="">
+        <p>Mazda CX-5 2014 Grand Touring </p>
+      </a>
+   
+      <a href="#" class="item-servicios-section">
+        <img src="img/img5.jpeg" alt="">
+        <p>Honda Hrv 2016</p>
+      </a>
+
+      <a href="#" class="item-servicios-section">
+        <img src="img/img20.jpg" alt="">
+        <p>Hrv Ex 2016 4x4 </p>
+      </a>
+  
+      <a href="#" class="item-servicios-section">
+        <img src="img/img2.jpeg" alt="">
+        <p>Kia Sportage 2015 4x2</p>
+      </a>
+   
+    </div>
+  </section>
+
+  <section class="section two-column-section">
+
+    <div class="wrap-title-section" id="quienes-somos">
+      <h2>¿Quiénes somos?</h2>
+    </div>
+
+    <div class="wrap-two-column">
+      <div class="wrap-img_two-column">
+        <img src="img/quienes_somos.jpg" alt="">
+      </div>
+
+      <div class="wrap-img_two-column">
+        <div class="wrap-text-column">
+          <h3>Características</h3>
+          <p>Operamos con transparencia, cumpliendo leyes y regulaciones, y nos involucramos en prácticas de responsabilidad social y sostenibilidad.</p>
+          <div class="wrap-cta">
+            <!-- Puedes agregar algún llamado a la acción aquí si lo necesitas -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section two-column-section form">
+
+    <div class="wrap-title-section" id="contacto">
+      <h2>Formulario de Contacto</h2>
+    </div>
+
+    <div class="wrap-two-column">
+
+      <div class="wrap-img_two-column">
+        <div class="wrap-text-column">
+          <h3>Contacta con nosotros</h3>
+
+          <form action="envio_formulario.php" method="post" class="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required="">
+            <br><br>
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asunto" id="asunto" required="">
+            <br><br>
+            
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40" required=""></textarea>
+            <br><br>
+            
+            <input type="submit" value="Enviar" class="cta-a">
+          </form>
+
+        </div>
+      </div>
+
+      <div class="wrap-img_two-column">
+        <img src="img/caroo_form.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="wrap-footer-section">
+      <div class="wrap-social-logos">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61558761192754" target="_blank">
+              <img src="img/Facebook-logo.png" alt="Facebook" class="social-logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/importadorayon_/" target="_blank">
+              <img src="img/Instagram-logo.png" alt="Instagram" class="social-logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<header class="header-landing">
+  <div class="wrap-logo">
+    <img src="img/logo.jpg" alt="" class="logo-header">
+  </div>
+  <nav class="main-menu">
+    <div class="menu-footer-section">
+      <div class="wrap-menu-footer-section">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios-section">Vehículos disponibles</a></li>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-footer-section">
+      <div class="footer-creds">
+        <p>©copytight 2024 - IMPORTADORA YÓN</p>
+      </div>
+    </div>
+
+  </footer>
+  <section class="section login-section" id="login-section">
+    <div class="wrap-title-section">
+      <h2>Iniciar Sesión</h2>
+    </div>
+    <div class="wrap-login-form">
+      <form action="login.php" method="post" class="form">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" name="username" id="username" required="">
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" required="">
+        <br><br>
+        <input type="submit" value="Login" class="cta-a">
+      </form>
+    </div>
+
+  
+</body>
+</html>
